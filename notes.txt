@@ -1,0 +1,76 @@
+Example 1
+====================
+- example of a class (will go over them later)
+- @ symbols are instance variables, these are unique to each object of this class
+- def's are functions, responsible for manipulating the instance variables
+
+- creating two new instances of Contact
+- ryan and danny are variables, they point to a memory location that contains the objects
+
+- calling the methods defined on each object
+
+Example 2
+==============
+- require let's you move the class into a different file to make it easier to manage
+- creating the same two instances of Contact that we created in the first example
+- people is an array, sort of like a list, a list of contacts in this case
+
+- block is made up of 2 parts, the parameter list (list of things you want passed into the block, just like a function), and the actual instructions to execute
+
+- when we call .each we pass it a block/lambda expression/function object to execute on each item in the list
+
+- File.open creates a file and receives a block of instructions to execute before closing the file
+
+- Here we have the display method take a block of what to do when the display method is called
+
+Example 5
+==========
+- we create another instance of the contact class
+- if takes an expression that evaluates to true or false, in this case we are checking to see if the string entered is the same as that in quotes, if it is then we execute the code, other wise we don't
+
+- in this case we execute the display method unless the input string is the same as "to_s"
+- here we only execute the code if the input string is the same as "to_s"
+
+Example 6
+==========
+- starts the same as the last example, but this time we use a case statement
+- we take the value of displayType.chomp and check it against multiple values
+- the first time the condition is true, we execute the code give to it, if no conditions match we execute the else block
+
+Example 7
+============
+- common example of a normal while loop in most languages, we keep looping as long as the expression evaluates to true
+
+- with ruby we can also execute something a specific number of times, by calling times on an integer and passing it a block to execute
+
+- same idea, but we give a start and an ending value, and the value can be passed into the block
+- calling each on a range object with a specific range of times we wanted it executed, block gets passed the current number
+
+-short hand for creating an array of strings, we can can call each and pass it code execute on each one
+- we can also say that for each object in collection
+
+Example 3
+============
+- class inheriting from Contact and overriding one of the methods
+
+Example 4
+============
+- We can define a module with methods.  The methods can access instance variables and private methods.  - We can then mix the methods into a class and the class will gain those functions.
+
+Example 8
+============
+- Symbols are a replacement for strings when you are strings when you are using them as an id.  
+- Symbols always have the same ID unlike strings.  It makes them great for using in hashes or when passing the name of functions around.
+- This is a hash, holds key value pairs.  We are using a symbol as the key.
+
+Example 9
+===========
+- Reopening the Contact class.  Classes are never sealed in Ruby.  You can create the class definition at any time and write new methods for it.
+
+- Ruby has methods to notify you when different actions occur on a given object.  In this case a class can be notified that it has been inherited from, and be passed the object that represents the class that inherited it.
+
+- We can call methods on an object by using the method send (like sending a message). We pass the name of the method than however many parameters the method normally takes.
+	
+- We can define methods on a single instance of a class, this creates a metaclass.
+- 
+
