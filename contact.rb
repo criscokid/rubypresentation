@@ -21,6 +21,7 @@ class Contact
   end
   
   def display(&blk)
+    blk.call(@name, @age)
     yield(@name, @age)
   end
   

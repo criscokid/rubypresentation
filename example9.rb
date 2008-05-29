@@ -23,3 +23,4 @@ def language.my_favorite
 end
 
 language.my_favorite
+"Ryan".my_favorite

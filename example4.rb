@@ -6,6 +6,13 @@ module CallMethods
   end
 end
 
+# module AddressBook
+#   class PhoneContact
+#   end
+# end
+# 
+# ryan = AddressBook::PhoneContact.new
+
 class PhoneContact < Contact
   
   include CallMethods
